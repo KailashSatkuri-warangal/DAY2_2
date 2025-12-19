@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV |Hotstar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .header_vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 120px;
+            background-color: #050505;
+            padding: 10px;
+            position: absolute;
+            transition: width 0.3s ease;
+        }
+        .header_vertical:hover {
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(240, 238, 238, 0));
+        }
+
+        .header_vertical nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            transition: width 0.3s ease;
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 8px 0;
+            border-radius: 4px;
+
+        }
+        .header_vertical nav a:hover {
+            font-size: 18px;
+            color: rgb(244, 244, 240);
+
+        }
+        .caurosel {
+            margin-left: 130px;
+            padding: 20px;
+            background-color: #333;
+        }
+        h1, h3 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header_vertical">
+        <a href="index.html">
+            <img src="src/image.png" alt="College Image" width="50px" height="50px">
+        </a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="tv.html">TV</a>
+            <a href="movies.html">Movies</a>
+            <a href="sports.html">Sports</a>
+            <a href="premium.html">Premium</a>
+            <a href="categories.html">Categories</a>
+            <a href="Myspace.html">My space</a>
+        </nav>
+    </div>
+    <div class="caurosel">
+        <h1>TV Shows</h1>
+        <div class="movie_list
+_horizontal">
+            <img src="src/movie.png" alt="TV Show 1" width="150px" height="220px">
+            <label>Show 1</label>
+            <img src="src/movie3.png" alt="TV Show 2" width="150px" height="220px">
+            <label>Show 2</label>
+            <img src="src/movie3.png" alt="TV Show 3" width="150px" height="220px">
+            <label>Show 3</label>
+            <img src="src/movie4.png" alt="TV Show 4" width="150px" height="220px">
+            <label>Show 4</label>
+            <img src="src/movie5.png" alt="TV Show 5" width="150px" height="220px">
+            <label>Show 5</label>
+</body>
+</html>

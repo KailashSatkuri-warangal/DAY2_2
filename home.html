@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home |Hotstar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .header_vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 120px;
+            background-color: #050505;
+            padding: 10px;
+            position: absolute;
+            transition: width 0.3s ease;
+        }
+
+        .header_vertical:hover {
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(240, 238, 238, 0));
+        }
+
+        .header_vertical nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            transition: width 0.3s ease;
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 8px 0;
+            border-radius: 4px;
+
+        }
+
+        .header_vertical nav a:hover {
+            font-size: 18px;
+            color: rgb(244, 244, 240);
+
+        }
+        .header_vertical:hover~.tiles_images {
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(240, 238, 238, 0));
+        }
+        .header_vertical:hover~.latest_trailers_urls,
+        .header_vertical:hover~.top_picks_urls,
+        .header_vertical:hover~.recommended_for_you_urls {
+            color:aliceblue;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(240, 238, 238, 0));
+        }
+        .latest_trailers_urls,
+        .top_picks_urls,
+        .recommended_for_you_urls {
+            flex-direction:row;
+            display: flex;
+            margin-left: 140px;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            color: white;
+            transition: linear 0.3s ease;
+        
+        }
+        .tiles_images {
+            margin-left: 140px;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            transition: linear 0.3s ease;
+        }
+        .info {
+            flex: 1;
+            margin-right: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .image_flex {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top_picks_urls img,
+        .latest_trailers_urls img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .top_picks_urls h2,
+        .latest_trailers_urls h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .latest_trailers_urls p,
+        .top_picks_urls p {
+            font-size: 16px;
+        }
+
+        .summary {
+            margin-top: 10px;
+            gap: 8px;
+            margin-left:60px;
+        }
+
+        .desc {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-left:60px;
+        }
+        .watch_now {
+            padding: 10px 20px;
+            background-color: #2331aaea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 150px;
+            transition: background-color 0.3s ease;
+        }
+        .watch_now:hover {
+            background-color: #051494ea;
+        }
+
+        
+
+        .marquee_loop img {
+            margin-right: 20px;
+            transition-property: transform;
+            transition-duration: 0.3s;
+        }
+
+        .marquee_loop img:hover {
+            transform: scale(1.1);
+        }
+        
+
+        footer {
+            background-color: #050505;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header_vertical">
+        <a href="index.html">
+            <img src="src/image.png" alt="College Image" width="50px" height="50px">
+        </a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="tv.html">TV</a>
+            <a href="movies.html">Movies</a>
+            <a href="sports.html">Sports</a>
+            <a href="premium.html">Premium</a>
+            <a href="categories.html">Categories</a>
+            <a href="Myspace.html">My space</a>
+        </nav>
+    </div>
+    <div class="latest_trailers_urls">
+        <div class="info">
+            <h2>Five night freddy</h2>
+            <p>Experience the untold story of the witches of Oz in this spectacular musical journey.</p>
+
+        </div>
+        <div class="image_flex">
+            <img src="src/movie4.png" alt="Latest Trailers" width="500px">
+        </div>
+        <div class="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis impedit quidem nobis!
+                Enim, iure obcaecati sapiente culpa cumque adipisci. Dolorem nobis at, aspernatur velit adipisci
+                cupiditate saepe vero consequuntur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit eaque fugiat, ut aliquam earum? Optio
+                numquam id sed iste! Ea qui consequatur ipsa molestias illum assumenda id! Doloribus, quam.
+            </p>
+        
+        <div class="desc">
+            <div class="ratings">
+                <p>Rating: 4.5/5</p>
+            </div>
+            <div class="release_date">
+                <p>Release Date: 2023-11-15</p>
+            </div>
+            <div class="imdb_rating">IMBD Rating:9.5/10
+
+            </div>
+            <button class="watch_now">Watch Now</button>
+            <div class="add_to_watchlist">Add to Watchlist</div>
+            <div class="share">Share</div>
+            <div class="more_info">More Info</div>
+            <div class="copy_right">@Copy Right to these film</div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <div class="top_picks_urls">
+        <div class="info">
+            <h2>Wicked for good</h2>
+            <p>Action-packed thriller featuring a soldier on a mission to save his country from impending danger.</p>
+        </div>
+        <img src="src/movie5.png" alt="Top Picks" width="500px">
+        <div class="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis impedit quidem nobis!
+                Enim, iure obcaecati sapiente culpa cumque adipisci. Dolorem nobis at, aspernatur velit adipisci
+                cupiditate saepe vero consequuntur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit eaque fugiat, ut aliquam earum? Optio
+                numquam id sed iste! Ea qui consequatur ipsa molestias illum assumenda id! Doloribus, quam.
+            </p>
+        
+        <div class="ratings">
+            <p>Rating: 4.5/5</p>
+        </div>
+        <div class="release_date">
+            <p>Release Date: 2023-11-15</p>
+        </div>
+        <div class="imdb_rating">IMBD Rating:9.5/10
+
+        </div>
+        <button class="watch_now">Watch Now</button>
+        <div class="add_to_watchlist">Add to Watchlist</div>
+        <div class="share">Share</div>
+        <div class="more_info">More Info</div>
+        <div class="copy_right">@Copy Right to these film</div>
+    </div></div>
+    <br>
+    <div class="top_picks_urls">
+        <div class="info">
+            <h2>ujjan</h2>
+            <p>Action-packed thriller featuring a soldier on a mission to save his country from impending danger.</p>
+        </div>
+        <img src="src/movie3.png" alt="Top Picks" width="500px">
+        <div class="summary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis impedit quidem nobis!
+                Enim, iure obcaecati sapiente culpa cumque adipisci. Dolorem nobis at, aspernatur velit adipisci
+                cupiditate saepe vero consequuntur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit eaque fugiat, ut aliquam earum? Optio
+                numquam id sed iste! Ea qui consequatur ipsa molestias illum assumenda id! Doloribus, quam.
+            </p>
+        
+        <div class="ratings">
+            <p>Rating: 4.5/5</p>
+        </div>
+        <div class="release_date">
+            <p>Release Date: 2023-11-15</p>
+        </div>
+        <div class="imdb_rating">IMBD Rating:9.5/10
+
+        </div>
+        <button class="watch_now">Watch Now</button>
+        <div class="add_to_watchlist">Add to Watchlist</div>
+        <div class="share">Share</div>
+        <div class="more_info">More Info</div>
+        <div class="copy_right">@Copy Right to these film</div>
+    </div></div>
+    <br>
+
+    <div class="tiles_images">
+        <marquee class="marquee_loop" behavior="scroll" direction="left" scrollamount="10">
+            <img src="src/movie.png" alt="Tile Image 1" width="200px" style="margin-left: 140px;">
+            <img src="src/movie5.png" alt="Tile Image 2" width="200px">
+            <img src="src/movie4.png" alt="Tile Image 3" width="200px">
+            <img src="src/movie3.png" alt="Tile Image 4" width="200px">
+            <img src="src/movie.png" alt="Tile Image 1" width="200px" style="margin-left: 140px;">
+            <img src="src/movie5.png" alt="Tile Image 2" width="200px">
+            <img src="src/movie4.png" alt="Tile Image 3" width="200px">
+            <img src="src/movie3.png" alt="Tile Image 4" width="200px">
+            <img src="src/movie.png" alt="Tile Image 1" width="200px" style="margin-left: 140px;">
+            <img src="src/movie5.png" alt="Tile Image 2" width="200px">
+            <img src="src/movie4.png" alt="Tile Image 3" width="200px">
+            <img src="src/movie3.png" alt="Tile Image 4" width="200px">
+        </marquee>
+    </div>
+
+
+    <footer>
+        <p style="color:white; text-align:center;">&copy; 2025 SR Hotstar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
